@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "categories": ["Motivation", "Success"]
+  },
+  {
+    "id": 2,
+    "text": "In the middle of every difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "categories": ["Motivation", "Wisdom"]
+  },
+  {
+    "id": 3,
+    "text": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius",
+    "categories": ["Motivation", "Wisdom"]
+  },
+  {
+    "id": 4,
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 5,
+    "text": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "categories": ["Motivation", "Success"]
+  },
+  {
+    "id": 6,
+    "text": "Two roads diverged in a wood, and I — I took the one less traveled by.",
+    "author": "Robert Frost",
+    "categories": ["Life", "Literature"]
+  },
+  {
+    "id": 7,
+    "text": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "categories": ["Motivation", "Success"]
+  },
+  {
+    "id": 8,
+    "text": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "categories": ["Motivation", "Success"]
+  },
+  {
+    "id": 9,
+    "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "categories": ["Courage", "Life"]
+  },
+  {
+    "id": 10,
+    "text": "I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.",
+    "author": "Martin Luther King Jr.",
+    "categories": ["Leadership", "Courage"]
+  },
+  {
+    "id": 11,
+    "text": "Imagination is more important than knowledge.",
+    "author": "Albert Einstein",
+    "categories": ["Science", "Wisdom"]
+  },
+  {
+    "id": 12,
+    "text": "The way to get started is to quit talking and begin doing.",
+    "author": "Walt Disney",
+    "categories": ["Motivation", "Success"]
+  },
+  {
+    "id": 13,
+    "text": "If life were predictable it would cease to be life, and be without flavor.",
+    "author": "Eleanor Roosevelt",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 14,
+    "text": "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
+    "author": "Mother Teresa",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 15,
+    "text": "When you reach the end of your rope, tie a knot in it and hang on.",
+    "author": "Franklin D. Roosevelt",
+    "categories": ["Courage", "Motivation"]
+  },
+  {
+    "id": 16,
+    "text": "Always remember that you are absolutely unique. Just like everyone else.",
+    "author": "Margaret Mead",
+    "categories": ["Life", "Humor"]
+  },
+  {
+    "id": 17,
+    "text": "Don't judge each day by the harvest you reap but by the seeds that you plant.",
+    "author": "Robert Louis Stevenson",
+    "categories": ["Wisdom", "Life"]
+  },
+  {
+    "id": 18,
+    "text": "The price of anything is the amount of life you exchange for it.",
+    "author": "Henry David Thoreau",
+    "categories": ["Philosophy", "Life"]
+  },
+  {
+    "id": 19,
+    "text": "In three words I can sum up everything I've learned about life: it goes on.",
+    "author": "Robert Frost",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 20,
+    "text": "If you look at what you have in life, you'll always have more.",
+    "author": "Oprah Winfrey",
+    "categories": ["Wisdom", "Life"]
+  },
+  {
+    "id": 21,
+    "text": "An unexamined life is not worth living.",
+    "author": "Socrates",
+    "categories": ["Philosophy", "Wisdom"]
+  },
+  {
+    "id": 22,
+    "text": "Spread love everywhere you go.",
+    "author": "Mother Teresa",
+    "categories": ["Life"]
+  },
+  {
+    "id": 23,
+    "text": "Be yourself; everyone else is already taken.",
+    "author": "Oscar Wilde",
+    "categories": ["Life", "Humor"]
+  },
+  {
+    "id": 24,
+    "text": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+    "author": "Albert Einstein",
+    "categories": ["Humor", "Science"]
+  },
+  {
+    "id": 25,
+    "text": "So many books, so little time.",
+    "author": "Frank Zappa",
+    "categories": ["Literature", "Humor"]
+  },
+  {
+    "id": 26,
+    "text": "A room without books is like a body without a soul.",
+    "author": "Marcus Tullius Cicero",
+    "categories": ["Literature", "Wisdom"]
+  },
+  {
+    "id": 27,
+    "text": "You only live once, but if you do it right, once is enough.",
+    "author": "Mae West",
+    "categories": ["Life", "Humor"]
+  },
+  {
+    "id": 28,
+    "text": "In the end, it's not the years in your life that count. It's the life in your years.",
+    "author": "Abraham Lincoln",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 29,
+    "text": "Never let the fear of striking out keep you from playing the game.",
+    "author": "Babe Ruth",
+    "categories": ["Courage", "Motivation"]
+  },
+  {
+    "id": 30,
+    "text": "Life is either a daring adventure or nothing at all.",
+    "author": "Helen Keller",
+    "categories": ["Life", "Courage"]
+  },
+  {
+    "id": 31,
+    "text": "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+    "author": "Thomas Edison",
+    "categories": ["Success", "Motivation"]
+  },
+  {
+    "id": 32,
+    "text": "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.",
+    "author": "Dr. Seuss",
+    "categories": ["Motivation", "Life"]
+  },
+  {
+    "id": 33,
+    "text": "If you want to live a happy life, tie it to a goal, not to people or things.",
+    "author": "Albert Einstein",
+    "categories": ["Life", "Philosophy"]
+  },
+  {
+    "id": 34,
+    "text": "Never let the fear of striking out keep you from playing the game.",
+    "author": "Babe Ruth",
+    "categories": ["Courage", "Success"]
+  },
+  {
+    "id": 35,
+    "text": "Money and success don't change people; they merely amplify what is already there.",
+    "author": "Will Smith",
+    "categories": ["Success", "Wisdom"]
+  },
+  {
+    "id": 36,
+    "text": "Your time is limited, so don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "categories": ["Life", "Motivation"]
+  },
+  {
+    "id": 37,
+    "text": "Not everything that is faced can be changed, but nothing can be changed until it is faced.",
+    "author": "James Baldwin",
+    "categories": ["Courage", "Wisdom"]
+  },
+  {
+    "id": 38,
+    "text": "It is during our darkest moments that we must focus to see the light.",
+    "author": "Aristotle",
+    "categories": ["Philosophy", "Wisdom"]
+  },
+  {
+    "id": 39,
+    "text": "Whoever is happy will make others happy too.",
+    "author": "Anne Frank",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 40,
+    "text": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    "author": "Ralph Waldo Emerson",
+    "categories": ["Leadership", "Motivation"]
+  },
+  {
+    "id": 41,
+    "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Chinese Proverb",
+    "categories": ["Wisdom", "Motivation"]
+  },
+  {
+    "id": 42,
+    "text": "An eye for an eye will only make the whole world blind.",
+    "author": "Mahatma Gandhi",
+    "categories": ["Wisdom", "Philosophy"]
+  },
+  {
+    "id": 43,
+    "text": "I am not a product of my circumstances. I am a product of my decisions.",
+    "author": "Stephen Covey",
+    "categories": ["Success", "Motivation"]
+  },
+  {
+    "id": 44,
+    "text": "Every child is an artist. The problem is how to remain an artist once he grows up.",
+    "author": "Pablo Picasso",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 45,
+    "text": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+    "author": "Maya Angelou",
+    "categories": ["Wisdom", "Life"]
+  },
+  {
+    "id": 46,
+    "text": "Whether you think you can or you think you can't — you're right.",
+    "author": "Henry Ford",
+    "categories": ["Motivation", "Philosophy"]
+  },
+  {
+    "id": 47,
+    "text": "The only impossible journey is the one you never begin.",
+    "author": "Tony Robbins",
+    "categories": ["Motivation", "Courage"]
+  },
+  {
+    "id": 48,
+    "text": "In this life we cannot do great things. We can only do small things with great love.",
+    "author": "Mother Teresa",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 49,
+    "text": "I find that the harder I work, the more luck I seem to have.",
+    "author": "Thomas Jefferson",
+    "categories": ["Success", "Motivation"]
+  },
+  {
+    "id": 50,
+    "text": "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "categories": ["Success", "Courage"]
+  },
+  {
+    "id": 51,
+    "text": "It is better to be feared than loved, if you cannot be both.",
+    "author": "Niccolò Machiavelli",
+    "categories": ["Leadership", "Philosophy"]
+  },
+  {
+    "id": 52,
+    "text": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "categories": ["Motivation", "Success"]
+  },
+  {
+    "id": 53,
+    "text": "It always seems impossible until it's done.",
+    "author": "Nelson Mandela",
+    "categories": ["Motivation", "Courage"]
+  },
+  {
+    "id": 54,
+    "text": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "categories": ["Motivation", "Leadership"]
+  },
+  {
+    "id": 55,
+    "text": "If you're going through hell, keep going.",
+    "author": "Winston Churchill",
+    "categories": ["Courage", "Motivation"]
+  },
+  {
+    "id": 56,
+    "text": "Well-behaved women seldom make history.",
+    "author": "Laurel Thatcher Ulrich",
+    "categories": ["Courage", "Leadership"]
+  },
+  {
+    "id": 57,
+    "text": "A person who never made a mistake never tried anything new.",
+    "author": "Albert Einstein",
+    "categories": ["Science", "Wisdom"]
+  },
+  {
+    "id": 58,
+    "text": "The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction.",
+    "author": "Barack Obama",
+    "categories": ["Courage", "Leadership"]
+  },
+  {
+    "id": 59,
+    "text": "First they ignore you, then they laugh at you, then they fight you, then you win.",
+    "author": "Mahatma Gandhi",
+    "categories": ["Courage", "Success"]
+  },
+  {
+    "id": 60,
+    "text": "Be the change that you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "categories": ["Leadership", "Philosophy"]
+  },
+  {
+    "id": 61,
+    "text": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "categories": ["Philosophy", "Wisdom"]
+  },
+  {
+    "id": 62,
+    "text": "Happiness is not something ready-made. It comes from your own actions.",
+    "author": "Dalai Lama",
+    "categories": ["Life", "Philosophy"]
+  },
+  {
+    "id": 63,
+    "text": "You can't use up creativity. The more you use, the more you have.",
+    "author": "Maya Angelou",
+    "categories": ["Wisdom", "Life"]
+  },
+  {
+    "id": 64,
+    "text": "I can't give you a sure-fire formula for success, but I can give you a formula for failure: try to please everybody all the time.",
+    "author": "Herbert Bayard Swope",
+    "categories": ["Success", "Wisdom"]
+  },
+  {
+    "id": 65,
+    "text": "Life is not measured by the number of breaths we take, but by the moments that take our breath away.",
+    "author": "Maya Angelou",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 66,
+    "text": "There is only one way to avoid criticism: do nothing, say nothing, and be nothing.",
+    "author": "Aristotle",
+    "categories": ["Courage", "Philosophy"]
+  },
+  {
+    "id": 67,
+    "text": "Ask not what your country can do for you — ask what you can do for your country.",
+    "author": "John F. Kennedy",
+    "categories": ["Leadership", "Motivation"]
+  },
+  {
+    "id": 68,
+    "text": "If you tell the truth, you don't have to remember anything.",
+    "author": "Mark Twain",
+    "categories": ["Wisdom", "Humor"]
+  },
+  {
+    "id": 69,
+    "text": "A friend is someone who knows all about you and still loves you.",
+    "author": "Elbert Hubbard",
+    "categories": ["Life", "Wisdom"]
+  },
+  {
+    "id": 70,
+    "text": "To live is the rarest thing in the world. Most people just exist.",
+    "author": "Oscar Wilde",
+    "categories": ["Life", "Philosophy"]
+  },
+  {
+    "id": 71,
+    "text": "In science, there are no shortcuts to truth.",
+    "author": "Karl Popper",
+    "categories": ["Science", "Wisdom"]
+  },
+  {
+    "id": 72,
+    "text": "The universe is under no obligation to make sense to you.",
+    "author": "Neil deGrasse Tyson",
+    "categories": ["Science", "Philosophy"]
+  },
+  {
+    "id": 73,
+    "text": "Science is not only compatible with spirituality; it is a profound source of spirituality.",
+    "author": "Carl Sagan",
+    "categories": ["Science", "Philosophy"]
+  },
+  {
+    "id": 74,
+    "text": "The good thing about science is that it's true whether or not you believe in it.",
+    "author": "Neil deGrasse Tyson",
+    "categories": ["Science", "Humor"]
+  },
+  {
+    "id": 75,
+    "text": "Research is what I'm doing when I don't know what I'm doing.",
+    "author": "Wernher von Braun",
+    "categories": ["Science", "Humor"]
+  },
+  {
+    "id": 76,
+    "text": "Not all those who wander are lost.",
+    "author": "J.R.R. Tolkien",
+    "categories": ["Literature", "Life"]
+  },
+  {
+    "id": 77,
+    "text": "All that glitters is not gold.",
+    "author": "William Shakespeare",
+    "categories": ["Literature", "Wisdom"]
+  },
+  {
+    "id": 78,
+    "text": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+    "author": "Jane Austen",
+    "categories": ["Literature", "Humor"]
+  },
+  {
+    "id": 79,
+    "text": "It was the best of times, it was the worst of times.",
+    "author": "Charles Dickens",
+    "categories": ["Literature", "Life"]
+  },
+  {
+    "id": 80,
+    "text": "The only way out of the labyrinth of suffering is to forgive.",
+    "author": "John Green",
+    "categories": ["Literature", "Philosophy"]
+  },
+  {
+    "id": 81,
+    "text": "Knowledge is power.",
+    "author": "Francis Bacon",
+    "categories": ["Wisdom", "Success"]
+  },
+  {
+    "id": 82,
+    "text": "I think therefore I am.",
+    "author": "René Descartes",
+    "categories": ["Philosophy", "Science"]
+  },
+  {
+    "id": 83,
+    "text": "The unexamined life is not worth living.",
+    "author": "Socrates",
+    "categories": ["Philosophy", "Wisdom"]
+  },
+  {
+    "id": 84,
+    "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle",
+    "categories": ["Philosophy", "Success"]
+  },
+  {
+    "id": 85,
+    "text": "The only true wisdom is in knowing you know nothing.",
+    "author": "Socrates",
+    "categories": ["Philosophy", "Wisdom"]
+  },
+  {
+    "id": 86,
+    "text": "The measure of a man is what he does with power.",
+    "author": "Plato",
+    "categories": ["Leadership", "Philosophy"]
+  },
+  {
+    "id": 87,
+    "text": "Leaders don't create followers; they create more leaders.",
+    "author": "Tom Peters",
+    "categories": ["Leadership", "Wisdom"]
+  },
+  {
+    "id": 88,
+    "text": "A leader is one who knows the way, goes the way, and shows the way.",
+    "author": "John C. Maxwell",
+    "categories": ["Leadership", "Success"]
+  },
+  {
+    "id": 89,
+    "text": "The art of leadership is saying no, not yes. It is very easy to say yes.",
+    "author": "Tony Blair",
+    "categories": ["Leadership", "Wisdom"]
+  },
+  {
+    "id": 90,
+    "text": "Management is doing things right; leadership is doing the right things.",
+    "author": "Peter Drucker",
+    "categories": ["Leadership", "Success"]
+  },
+  {
+    "id": 91,
+    "text": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas Edison",
+    "categories": ["Success", "Motivation"]
+  },
+  {
+    "id": 92,
+    "text": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau",
+    "categories": ["Success", "Wisdom"]
+  },
+  {
+    "id": 93,
+    "text": "Opportunities don't happen; you create them.",
+    "author": "Chris Grosser",
+    "categories": ["Success", "Motivation"]
+  },
+  {
+    "id": 94,
+    "text": "Try not to become a man of success, but rather try to become a man of value.",
+    "author": "Albert Einstein",
+    "categories": ["Success", "Wisdom"]
+  },
+  {
+    "id": 95,
+    "text": "Great minds discuss ideas; average minds discuss events; small minds discuss people.",
+    "author": "Eleanor Roosevelt",
+    "categories": ["Wisdom", "Leadership"]
+  },
+  {
+    "id": 96,
+    "text": "I am so clever that sometimes I don't understand a single word of what I am saying.",
+    "author": "Oscar Wilde",
+    "categories": ["Humor", "Literature"]
+  },
+  {
+    "id": 97,
+    "text": "Age is of no importance unless you're a cheese.",
+    "author": "Billie Burke",
+    "categories": ["Humor", "Life"]
+  },
+  {
+    "id": 98,
+    "text": "The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it.",
+    "author": "Terry Pratchett",
+    "categories": ["Humor", "Philosophy"]
+  },
+  {
+    "id": 99,
+    "text": "I walk slowly, but I never walk backward.",
+    "author": "Abraham Lincoln",
+    "categories": ["Motivation", "Courage"]
+  },
+  {
+    "id": 100,
+    "text": "The only person you are destined to become is the person you decide to be.",
+    "author": "Ralph Waldo Emerson",
+    "categories": ["Philosophy", "Motivation"]
+  }
+]

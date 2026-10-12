@@ -1,0 +1,505 @@
+/* ============================================================
+   CSS CUSTOM PROPERTIES — Light Theme (default)
+   ============================================================ */
+:root {
+  --bg-page:        #f5f3ef;
+  --bg-card:        #ffffff;
+  --bg-card-hero:   #ffffff;
+  --bg-header:      #ffffff;
+  --bg-footer:      #f0ece4;
+  --border-color:   #e2ddd6;
+
+  --text-primary:   #1f1f1f;
+  --text-secondary: #5a5a5a;
+  --text-muted:     #888888;
+  --text-quote:     #2d2d2d;
+
+  --accent:         #5c6bc0;
+  --accent-hover:   #4557b8;
+  --accent-light:   #eef0fb;
+
+  --btn-secondary-bg:    #f0ece4;
+  --btn-secondary-hover: #e4dfd5;
+
+  --shadow-card:    0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hero:    0 8px 32px rgba(92, 107, 192, 0.15);
+  --shadow-hover:   0 6px 24px rgba(0, 0, 0, 0.12);
+
+  --radius-card:    16px;
+  --radius-sm:      8px;
+  --radius-input:   10px;
+
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+
+  --transition: 0.25s ease;
+}
+
+/* ============================================================
+   Dark Theme
+   ============================================================ */
+[data-theme="dark"] {
+  --bg-page:        #0f0f1a;
+  --bg-card:        #1a1a2e;
+  --bg-card-hero:   #1e1e35;
+  --bg-header:      #12121f;
+  --bg-footer:      #12121f;
+  --border-color:   #2a2a45;
+
+  --text-primary:   #e8e6f0;
+  --text-secondary: #9e9caf;
+  --text-muted:     #666680;
+  --text-quote:     #dddae8;
+
+  --accent:         #818cf8;
+  --accent-hover:   #9da4fc;
+  --accent-light:   #1e1e35;
+
+  --btn-secondary-bg:    #22223a;
+  --btn-secondary-hover: #2a2a48;
+
+  --shadow-card:    0 2px 12px rgba(0, 0, 0, 0.4);
+  --shadow-hero:    0 8px 32px rgba(129, 140, 248, 0.15);
+  --shadow-hover:   0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color var(--transition), color var(--transition);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header {
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color var(--transition), border-color var(--transition);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.header-icon {
+  font-size: 1.8rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.header-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* ============================================================
+   THEME TOGGLE BUTTON
+   ============================================================ */
+.btn-icon {
+  background: var(--btn-secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-icon:hover {
+  background: var(--btn-secondary-hover);
+  transform: scale(1.05);
+}
+
+/* Show sun in dark mode, moon in light mode */
+.icon-sun { display: none; }
+.icon-moon { display: block; }
+
+[data-theme="dark"] .icon-sun { display: block; }
+[data-theme="dark"] .icon-moon { display: none; }
+
+/* ============================================================
+   CONTAINER
+   ============================================================ */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ============================================================
+   HERO SECTION — Random Quote
+   ============================================================ */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-card {
+  background: var(--bg-card-hero) !important;
+  box-shadow: var(--shadow-hero) !important;
+  border: 1px solid var(--accent-light);
+  width: 100%;
+  max-width: 780px;
+  padding: 2.5rem 3rem !important;
+  position: relative;
+}
+
+.hero-card::before {
+  content: '❝';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  color: var(--accent);
+  opacity: 0.18;
+  font-family: var(--font-serif);
+  line-height: 1;
+}
+
+/* ============================================================
+   QUOTE CARD (shared)
+   ============================================================ */
+.quote-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-color);
+  transition: background-color var(--transition), border-color var(--transition),
+              box-shadow var(--transition), transform 0.2s ease, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quote-card:hover:not(.hero-card) {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+/* Quote text */
+.quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--text-quote);
+  line-height: 1.75;
+  font-style: italic;
+}
+
+.hero-card .quote-text {
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+/* Author */
+.quote-author {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: right;
+  letter-spacing: 0.01em;
+}
+
+.hero-card .quote-author {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.quote-author::before {
+  content: '— ';
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Category pills */
+.quote-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
+.hero-card .quote-categories {
+  justify-content: center;
+}
+
+.category-pill {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: background var(--transition), color var(--transition);
+}
+
+.category-pill:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Card fade animation */
+.quote-card.fade-out { opacity: 0; transform: translateY(8px); }
+.quote-card.fade-in  { opacity: 1; transform: translateY(0); }
+
+/* Loading state */
+.card-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background var(--transition), transform 0.15s ease, box-shadow var(--transition);
+  font-family: var(--font-sans);
+}
+
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 3px 12px rgba(92, 107, 192, 0.3);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 4px 16px rgba(92, 107, 192, 0.4);
+}
+
+.btn-secondary {
+  background: var(--btn-secondary-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--btn-secondary-hover);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   SEARCH SECTION
+   ============================================================ */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.search-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.input-field {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-input);
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+  outline: none;
+  width: 100%;
+}
+
+.input-field:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(92, 107, 192, 0.15);
+}
+
+.select-field {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.2rem;
+}
+
+/* ============================================================
+   RESULTS
+   ============================================================ */
+.results-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  min-height: 1.2em;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Card entrance animation */
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.results-grid .quote-card {
+  animation: cardIn 0.3s ease forwards;
+}
+
+/* No results */
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.no-results-icon { font-size: 2.5rem; }
+
+.hidden { display: none !important; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  background: var(--bg-footer);
+  transition: background var(--transition), border-color var(--transition);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 640px) {
+  .header-title { font-size: 1.1rem; }
+
+  .hero-card {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .hero-card .quote-text { font-size: 1.15rem; }
+
+  .search-controls {
+    flex-direction: column;
+  }
+
+  .input-group { min-width: unset; }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container { padding: 1.75rem 1rem; }
+}
